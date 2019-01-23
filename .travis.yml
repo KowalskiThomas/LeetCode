@@ -1,0 +1,15 @@
+language: cpp
+compiler:
+  - gcc
+install:
+  - sudo apt-get update
+  - sudo apt-get install libcppunit-dev
+  - make all_tests
+script:
+  - ./build/tests_strstr
+notifications:
+  recipients:
+    - thom.kowa@gmail.com
+  email:
+    on_success: change
+    on_failure: always

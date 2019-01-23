@@ -38,15 +38,3 @@ int strStr(string haystack, string needle)
 
     return -1;
 }
-
-int main()
-{
-    cout << (-1 == strStr("", "qsjdklqsd")) << endl;
-    cout << (0 == strStr("qsdqsdf", "")) << endl;
-    cout << (1 == strStr("abcdef", "bcd")) << endl;
-    cout << (3 == strStr("abcdef", "def")) << endl;
-    cout << (-1 == strStr("abcde", "def")) << endl;
-    cout << (2 == strStr("hello", "ll"))  << endl;
-    cout << (0 == strStr("a", "a"))  << endl;
-    return 0;
-}
