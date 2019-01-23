@@ -15,11 +15,8 @@ int strStr(string haystack, string needle)
     if (haystack_length < needle_length)
         return -1;
     
-    auto s = haystack.c_str();
-    auto sub = needle.c_str();
-
-    int j = 0;
-    for (auto i = 0; i < haystack.length() - needle.length() + 1; i++)
+    unsigned int j = 0;
+    for (unsigned int i = 0; i < haystack.length() - needle.length() + 1; i++)
     {
         if (haystack[i] == needle[0])
         {
